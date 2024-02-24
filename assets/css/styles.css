@@ -15,7 +15,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Jost', sans-serif;
-    background-color: #F6F5F2;
+    background-color: #FFF5E9;
 }
 
 img,
@@ -74,17 +74,17 @@ h6 {
 
 .nav-link {
     text-decoration: none;
-    color: #DA94A5;
+    color: #5C3F32;
 }
 
 .nav-link:hover {
-    color: #E4AFBB;
+    color: #8A7467;
 }
 
 .container {
     display: flex;
     align-items: center;
-    background-color: #DA94A5;
+    background-color: #5E4235;
     border-radius: 2rem;
     margin: 2rem;
     padding: 0 0 0 2rem;
@@ -92,11 +92,11 @@ h6 {
 
 .main-heading {
     font-size: 6rem;
-    color: #502c35;
+    color: #FDFAEC;
 }
 
 .subheading {
-    color: #502c35;
+    color: #FDFAEC;
     font-size: 2rem;
 }
 
@@ -108,7 +108,7 @@ h6 {
 
 .learn-more-btn {
     text-decoration: none;
-    background-color: #502c35;
+    background-color: #7e685d;
     border-radius: 3rem;
     padding: 1rem 4rem;
     color: #F6F5F2;
