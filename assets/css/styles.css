@@ -44,12 +44,6 @@ h6 {
     overflow-wrap: break-word;
 }
 
-
-#root,
-#__next {
-    isolation: isolate;
-}
-
 /*************************************************************/
 /* GENERAL STYLES */
 /*************************************************************/
@@ -119,6 +113,10 @@ h6 {
     border-radius: 0 2rem 2rem 0;
 }
 
+.shopping-cart {
+    color:#5C3F32;
+    width: 1rem;
+}
 
 /* jost-regular - latin */
 @font-face {
@@ -181,7 +179,7 @@ h6 {
     }
 
     .burger {
-        display: none;
+        visibility: hidden;
     }
 }
 
