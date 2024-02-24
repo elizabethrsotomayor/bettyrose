@@ -83,15 +83,12 @@ h6 {
 
 .container {
     display: flex;
-    align-items: center;
     background-color: #5E4235;
     border-radius: 2rem;
     margin: 2rem;
-    padding: 0 0 0 2rem;
 }
 
 .main-heading {
-    font-size: 6rem;
     color: #FDFAEC;
 }
 
@@ -100,10 +97,13 @@ h6 {
     font-size: 2rem;
 }
 
+.intro {
+    padding: 1rem;
+}
+
 .btn-container {
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
 }
 
 .learn-more-btn {
@@ -115,7 +115,6 @@ h6 {
 }
 
 .heroimg {
-    height: 50rem;
     margin-left: auto;
     border-radius: 0 2rem 2rem 0;
 }
@@ -158,3 +157,86 @@ h6 {
 * Palette: 
 * https://coolors.co/da94a5-f6f5f2-f6f5f2-ecc5ce-f6f5f2-f1d4da-e4afbb-f0d2d8-e09ead-c96d84
 */
+
+/*************************************************************/
+/* DESKTOP STYLES */
+/*************************************************************/
+
+@media (min-width: 52rem) {
+    .heroimg {
+        height: 50rem;
+    }
+
+    .container {
+        padding: 0 0 0 2rem;
+        align-items: center;
+    }
+
+    .main-heading {
+        font-size: 6rem;
+    }
+    
+    .btn-container {
+        margin-top: 8rem;
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+/*************************************************************/
+/* TABLET STYLES */
+/*************************************************************/
+@media (min-width: 50rem) and (max-width: 52rem) {
+
+    .intro {
+        margin: 1.2rem;
+    }
+    .btn-container {
+        margin: 2rem;
+    }
+}
+
+
+/*************************************************************/
+/* MOBILE STYLES */
+/*************************************************************/
+
+@media (min-width: 23rem) and (max-width: 52rem) {
+    .subheading {
+        font-size: 1.2rem;
+    }
+
+    .btn-container {
+        margin-top: 1rem;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .heroimg {
+        width: 100%;
+        object-fit: cover;
+        border-radius:  0 0 2rem 2rem;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 2rem;
+    }
+}
