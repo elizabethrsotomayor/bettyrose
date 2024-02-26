@@ -16,8 +16,8 @@
                 <i class="burger fa fa-solid fa-bars"></i>
                 <ul class="navbar">
                     <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">Menu</a></li>
-                    <li><a href="#" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <li><a href="#"><i class="fa fa-solid fa-cart-plus shopping-cart"></i></a></li>
                 </ul>
@@ -30,24 +30,128 @@
                     <p class="subheading">A coffee shop and cafe in Oklahoma City</p>
                     <p class="subheading">Thanks for stopping by!</p>
                     <div class="btn-container">
-                        <a href="#" class="learn-more-btn">Learn more</a>
+                        <a href="#about" class="learn-more-btn">Learn more</a>
                     </div>
                 </div>
                 <img src="assets/images/coffee-hero.jpg" alt="coffee hero img" class="heroimg">
             </div>
         </header>
         <section id="menu">
-            <h2>menu goes here</h2>
+            <h2 class="menu-heading">Menu</h2>
+
+            <div class="menu-wrapper">
+                <nav class="menu-categories">
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-link" href="#">Hot Drinks</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Cold Drinks</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Donuts</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#">Cookies</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-items">
+                    <ul class="hot-drinks">
+                        <li class="hot-drink-items">
+                            <img src="assets/images/Cappuchino.jpg" alt="cappuchino" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Cappuchino</h2>
+                            <span>$3.50</span>
+                        </li>
+                        <li class="hot-drink-items">
+                            <img src="assets/images/Espresso.jpg" alt="espresso" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Espresso</h2>
+                            <span class="price">$2.50</span>
+                        </li>
+                        <li class="hot-drink-items">
+                            <img src="assets/images/Macchiato.jpg" alt="macchiato" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Macchiato</h2>
+                            <span class="price">$4.50</span>
+                        </li>
+                        <li class="hot-drink-items">
+                            <img src="assets/images/Mocha.jpg" alt="mocha" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Mocha</h2>
+                            <span class="price">$4.00</span>
+                        </li>
+                        <li class="hot-drink-items">
+                            <img src="assets/images/hot-tea.jpg" alt="hot tea" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Hot tea</h2>
+                            <span class="price">$2.50</span>
+                        </li>
+                        <li class="hot-drink-items">
+                            <img src="assets/images/hot-chocolate.jpg" alt="hot chocolate" class="hot-drink-img">
+                            <h3 class="hot-drink-heading">Hot chocolate</h2>
+                            <span class="price">$3.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="menu-items">
+                <div id="hot-drinks">
+                    <h2>Hot Drinks</h2>
+                    <ul>
+                        <li><img src="assets/images/Cappuchino.jpg" alt="Cappuchino">Cappuchino</li>
+                    </ul>
+                </div>
+                <div id="cold-drinks">
+                    <h1>Cold Drinks</h1>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="donuts">
+                    <h1>Donuts</h1>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="cookies">
+                    <h1>Cookies</h1>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div> -->
+
         </section>
         <section id="about">
-            <h3>About goes here</h3>
-        </section>
+            <img src="assets/images/coffee-about.jpg" alt="about coffee image" class="about-img">
+            <div class="about-text-container">
+                <h3 class="about-text">About us</h3>
+                <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, necessitatibus sint fuga nisi quae facere impedit consectetur, distinctio illum ab tempora quis cum explicabo quaerat esse. Obcaecati dolorum perferendis recusandae?</p>
+                <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, necessitatibus sint fuga nisi quae facere impedit consectetur, distinctio illum ab tempora quis cum explicabo quaerat esse. Obcaecati dolorum perferendis recusandae?</p>
+                <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, necessitatibus sint fuga nisi quae facere impedit consectetur, distinctio illum ab tempora quis cum explicabo quaerat esse. Obcaecati dolorum perferendis recusandae?</p>
+                <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, necessitatibus sint fuga nisi quae facere impedit consectetur, distinctio illum ab tempora quis cum explicabo quaerat esse. Obcaecati dolorum perferendis recusandae?</p>
+            </div>
+            </section>
+        </div>
         <section id="contact">
-            
+            <h3 class="contact-heading">Contact Us</h3>
+            <div class="contact-container">
+                <form action="">
+                    <label for="firstname" class="form-labels">Name:</label>
+                    <input type="text" class="input-field" id="firstname">
+
+                    <label for="email" class="form-labels">Email:</label>
+                    <input type="email" name="email" id="email" class="input-field">
+
+                    <label for="howfound" class="form-labels">How did you find us?</label>
+                    <select id="howfound" name="howfound" class="input-field">
+                        <option value="google">Google</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="ad">Print ad</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="subject" class="form-labels">Message: </label>
+                    <textarea name="" id="subject" cols="50" rows="10"></textarea>
+
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+                <img src="assets/images/map.jpg" alt="map" class="map">
+            </div>
         </section>
     </main>
-    <footer role="contentinfo">
+    <footer role="contentinfo" class="footer">
         <p>©️ CtrlFreaks Coffee</p>
+        <p><i class="fa-brands fa-square-instagram"></i></p>
     </footer>
 </body>
 </html>
