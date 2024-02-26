@@ -57,7 +57,6 @@ h6 {
     display: flex;
     gap: 10rem;
     margin-top: 2rem;
-    margin-right: 5rem;
 }
 
 .logo {
@@ -139,8 +138,6 @@ h6 {
 
 .menu-wrapper {
     display: flex;
-    align-items: center;
-    gap: 5rem;
 }
 
 .menu-categories {
@@ -178,25 +175,13 @@ h6 {
 
 .menu-item {
     margin-bottom: 1.2rem;
-    font-size: 1.4rem;
     font-weight: 600;
 }
-
-/* .hot-drink-items {
-    place-self: center;
-} */
-
-/* #hot-drinks {
-    max-width: 400px;
-    max-height: 400px;
-    list-style-type: none;
-} */
 
 /******/
 /* About */
 /******/
 #about {
-    height: 80vh;
     background-color: #8A7467;
     display: flex;
     margin-top: 0;
@@ -210,56 +195,29 @@ h6 {
 /******/
 /* Contact */
 /******/
-#contact {
-    height: 100vh;
-    margin-top: 5rem;
-}
 
 .contact-heading {
     text-align: center;
-    margin: 3rem 0;
-    font-size: 2rem;
 }
 
 .contact-container {
     display: flex;
-    /* gap: 2rem; */
-    padding: 0 6rem;
-    justify-content: center;
-}
-
-.map {
-    width: 60%;
-    flex-grow: 0.3;
-    border-radius: 0 2rem 2rem 0;
-    box-shadow: 30px 27px 0px 0px rgba(188, 173, 160, 1);
 }
 
 form {
     background-color: #5C3F32;
     padding: 2rem;
-    border-radius: 2rem 0 0 2rem;
-    box-shadow: 30px 27px 0px 0px rgba(188, 173, 160, 1);
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    margin-left: 0.5rem;
+        flex-direction: column;
 }
 
-input, select {
-    width: 15rem;
-    margin-bottom: 1rem;
-}
-
-textarea {
-    width: 20rem;
-    height: 15rem;
-    margin-bottom: 2rem;
+.form-labels {
+    color: #F6F5F2;
 }
 
 .submit-btn {
     align-self: center;
-    margin: 0;
+    margin-top: 1rem;
     background-color: #008CBA;
     border: none;
     color: white;
@@ -274,19 +232,13 @@ textarea {
     color: #F6F5F2;
 }
 
-.submit-btn:hover {
-    background-color: #F6F5F2;
-    color: #5C3F32;
-}
-
-.form-labels {
+/******/
+/* Footer */
+/******/
+.footer {
+    background-color: #5C3F32;
     color: #F6F5F2;
 }
-
-.input-field {
-    padding: 0.5rem;
-}
-
 
 /* jost-regular - latin */
 @font-face {
@@ -331,6 +283,11 @@ textarea {
 /*************************************************************/
 
 @media (min-width: 52rem) {
+
+    .navbar {
+        margin-right: 5rem;
+    }
+
     .heroimg {
         height: 50rem;
     }
@@ -351,6 +308,90 @@ textarea {
     .burger {
         visibility: hidden;
     }
+
+    .menu-wrapper {
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .menu-item {
+        font-size: 1.4rem;
+    }
+
+    #about {
+        height: 80vh;
+    }
+
+    /******/
+    /* Contact */
+    /******/
+    #contact {
+        height: 100vh;
+        margin-top: 5rem;
+    }
+    
+    .contact-heading {
+        margin: 3rem 0;
+        font-size: 2rem;
+    }
+    
+    .contact-container {
+        padding: 0 6rem;
+        justify-content: center;
+    }
+    
+    .map {
+        width: 60%;
+        flex-grow: 0.3;
+        border-radius: 0 2rem 2rem 0;
+        box-shadow: 30px 27px 0px 0px rgba(188, 173, 160, 1);
+    }
+    
+    form {
+        box-shadow: 30px 27px 0px 0px rgba(188, 173, 160, 1);
+        flex-grow: 1;
+        margin-left: 0.5rem;
+        border-radius: 2rem 0 0 2rem;
+    }
+    
+    input,
+    select {
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+    
+    textarea {
+        width: 20rem;
+        height: 15rem;
+        margin-bottom: 2rem;
+    }
+    
+    .submit-btn:hover {
+        background-color: #F6F5F2;
+        color: #5C3F32;
+    }
+    
+    .input-field {
+        padding: 0.5rem;
+    }
+
+    .socials {
+        color: #F6F5F2;
+    }
+
+    .footer {
+        height: 50vh;
+        display: flex;
+        align-items: flex-end;
+        gap: 10rem;
+    }
+
+    .socials {
+        display: flex;
+        gap: 10rem;
+        margin: 10rem 20rem;
+        font-size: 3rem;
+    }
 }
 
 /*************************************************************/
@@ -364,6 +405,10 @@ textarea {
 
     .btn-container {
         margin: 2rem;
+    }
+
+    .menu {
+        display: flex;
     }
 }
 
@@ -417,11 +462,51 @@ textarea {
         background-color: #8A7467;
     }
 
+    .contact-heading {
+        margin-top: 1rem;
+    }
+
     .contact-container {
         flex-direction: column;
     }
 
-    .footer {
-        visibility: hidden;
+    .menu-wrapper {
+        flex-direction: column;
     }
+
+    .menu {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-item {
+        font-size: 1.2rem;
+    }
+
+    .about-text-container {
+        padding-bottom: 2rem;
+    }
+
+    form {
+        border-radius: 2rem;
+        margin: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        gap: 10rem;
+        height: 5rem;
+        align-items: center;
+    }
+
+    .socials {
+        display: flex;
+        gap: 5rem
+    }
+
+    .social-icons{
+        font-size: 3rem;
+    }
+
 }
